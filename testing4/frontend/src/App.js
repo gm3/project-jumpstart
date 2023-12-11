@@ -1,0 +1,1 @@
+// Main frontend application file

@@ -10,7 +10,7 @@ def create_file(path, content=''):
     with open(path, 'w') as file:
         file.write(content)
 
-def create_project_structure():
+def create_project_structure(target_directory):
     """Create the project structure based on the project type."""
     # Common Directories
     directories = [
@@ -44,19 +44,6 @@ def create_project_structure():
 
     print("Project structure created successfully.")
 
-def create_common_files():
-    """Create common files for any project type."""
-    # Common files are created here
-    create_file('README.md', '# Project Title\n\nDescription of the project.\n')
-    create_file('LICENSE', 'MIT License\n\n[Your License Details Here]\n')
-    create_file('.env.example', '# Environment variables template\n')
-    create_file('CONTRIBUTING.md', '# Contributing Guidelines\n')
-    create_file('CODE_OF_CONDUCT.md', '# Code of Conduct\n')
-    create_file('.github/ISSUE_TEMPLATE/bug_report.md', '# Bug Report Template\n')
-    create_file('.github/ISSUE_TEMPLATE/feature_request.md', '# Feature Request Template\n')
-    create_gitignore()
-    print("Created common files")
-
 def install_frontend_libraries():
     """Install frontend libraries for a web project."""
     # try:
@@ -66,5 +53,5 @@ def install_frontend_libraries():
         # print(f"Error installing libraries: {e}")
 
 if __name__ == "__main__":
-    target_directory = input("Enter the target directory for your project: ")
+    target_directory = os.environ.get("TARGET_DIRECTORY")
     create_project_structure(target_directory)

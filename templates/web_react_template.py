@@ -9,12 +9,13 @@ def create_file(path, content=''):
     with open(path, 'w') as file:
         file.write(content)
 
-def create_project_structure():
+def create_project_structure(target_directory):
     """Create the project structure based on the project type."""
     # Common Directories
     directories = [
         'frontend/src', 'frontend/public',
         'backend/src', 'backend/controllers', 'backend/models', 'backend/routes', 'backend/utils',
+        '.github/workflows', '.github/ISSUE_TEMPLATE'
     ]
      # Check if the target directory already exists
     if os.path.exists(target_directory):
@@ -61,5 +62,5 @@ def create_web_project_files():
     # Other web project files...
 
 if __name__ == "__main__":
-    target_directory = input("Enter the target directory for your project: ")
+    target_directory = os.environ.get("TARGET_DIRECTORY")
     create_project_structure(target_directory)

@@ -16,6 +16,7 @@ def create_project_structure(target_directory):
     directories = [
         'cli', 'cli/commands', 'cli/utils','frontend/src', 'frontend/public', 
             'backend/src', 'backend/controllers', 'backend/models', 'backend/routes', 'backend/utils',
+            '.github/workflows', '.github/ISSUE_TEMPLATE'
     ]
     
     # Check if the target directory already exists
@@ -32,10 +33,10 @@ def create_project_structure(target_directory):
 
     # Create the directories in the specified target directory
     for directory in directories:
-        os.makedirs(os.path.join(target_directory, directory), exist_ok=True)
+        os.makedirs(os.path.join(os.environ.get("TARGET_DIRECTORY"), directory), exist_ok=True)
         
     # Create common files in the target directory
-    os.chdir(target_directory)
+    os.chdir(os.environ.get("TARGET_DIRECTORY"))
     create_common_files()
     create_gitignore()
     
@@ -50,5 +51,5 @@ def install_frontend_libraries():
         # print(f"Error installing libraries: {e}")
 
 if __name__ == "__main__":
-    target_directory = input("Enter the target directory for your project: ")
+    target_directory = os.environ.get("TARGET_DIRECTORY")
     create_project_structure(target_directory)
