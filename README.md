@@ -35,7 +35,7 @@ To add a new project template:
 
 ## Contributing
 
-We welcome pull requests for new features, bug fixes, and additional project configurations. Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
+We welcome pull requests for new features, bug fixes, and additional project configurations. 
 
 ## License
 
