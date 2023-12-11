@@ -7,6 +7,9 @@ Project Jumpstart is a Python script designed to streamline the creation of new 
 - Generates a basic project structure for projects
 - Easy to extend with more project templates.
 
+![image](https://github.com/gm3/project-jumpstart/assets/7612104/e585f52c-0bca-474d-8636-4f667fd945c9)
+
+
 ## Usage
 To use this script, follow these steps:
 
