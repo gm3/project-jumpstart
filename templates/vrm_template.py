@@ -1,7 +1,9 @@
 import os
 import subprocess
-from common_setup import create_common_files
-from create_gitignore import create_gitignore
+
+# Import modules from the defaults directory
+from defaults.create_common_files import create_common_files
+from defaults.create_gitignore import create_gitignore
 
 def create_file(path, content=''):
     """Create a file with the given content."""

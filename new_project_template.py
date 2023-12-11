@@ -1,9 +1,13 @@
 import os
 import subprocess
 # Import the template functions
-from templates.web_react_template import create_web_react_project
-from templates.cli_template import create_cli_project
-from templates.vrm_template import create_vrm_project
+from templates.web_react_template import create_project_structure
+from templates.cli_template import create_project_structure
+from templates.vrm_template import create_project_structure
+
+# Import modules from the defaults directory
+from defaults.create_common_files import create_common_files
+from defaults.create_gitignore import create_gitignore
 
 def prompt_project_type():
     """Prompt the user to select the project type."""
