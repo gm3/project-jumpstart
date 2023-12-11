@@ -47,7 +47,7 @@ parser.add_argument(
              'static_website - To create a Static Website project.')
 ```
 
-**Select Project Type**: The script will prompt you to select the type of project you want to create. Input the number corresponding to your desired project type, currently we have a few starter templates that need work:
+**Select Project Type**: The script will prompt you to select the type of project you want to create. Input desired project type, currently we have a few starter templates that need work:
    - `web_react`: Web/React Project
    - `cli`: CLI Tool
    - `vrm`: VRM Project
