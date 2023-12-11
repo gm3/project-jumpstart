@@ -21,11 +21,15 @@ To use this tool, follow these steps:
 
 2. **Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line. You can use arements like this:
 
-3. ```new_project_tempalte.py --help```
+3. ```
+4. new_project_tempalte.py --help
+5. ```
 
 **Here is an example CLI command:**
 
-```python3 new_project_tempalte.py /path/to/directory -t web_react```
+```
+python3 new_project_tempalte.py /path/to/directory -t web_react
+```
 
 **How the CLI is defined in new_project_tempalte.py:**
 
