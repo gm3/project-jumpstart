@@ -45,7 +45,7 @@ def create_project_structure(target_directory):
 
     # Install frontend libraries
     try:
-        subprocess.run(["npm", "install", "react", "react-dom", "three"], check=True)
+        subprocess.run(["npm", "install", "react"], check=True)
         # Add other libraries as needed
     except Exception as e:
         print(f"Error installing libraries: {e}")
