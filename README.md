@@ -21,7 +21,7 @@ To use this script, follow these steps:
 
 2. **Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line.
 
-3. **Select Project Type**: The script will prompt you to select the type of project you want to create. Input the number corresponding to your desired project type:
+3. **Select Project Type**: The script will prompt you to select the type of project you want to create. Input the number corresponding to your desired project type, currently we have a few starter templates that need work:
    - `1`: Web/React Project
    - `2`: CLI Tool
    - `3`: VRM Project
