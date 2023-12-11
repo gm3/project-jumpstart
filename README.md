@@ -22,7 +22,7 @@ To use this tool, follow these steps:
 **Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line. You can use arements like this:
 
 ```
-new_project_tempalte.py --help
+new_project_template.py --help
 ```
 
 **Here is an example CLI command:**
