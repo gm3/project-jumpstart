@@ -13,6 +13,10 @@ Project Jumpstart is a Python script designed to streamline the creation of new 
 ## Usage
 To use this script, follow these steps:
 
+`sudo apt update`
+
+`sudo apt install npm`
+
 1. **Clone or Download the Script**: First, clone this repository or download the script to your local machine.
 
 2. **Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line.
