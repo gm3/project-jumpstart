@@ -86,7 +86,7 @@ ehthumbs.db
 Thumbs.db
     """
     create_file('.gitignore', gitignore_content)
-    print(".gitignore created successfully.")
+    # print(".gitignore created successfully.")
 
 if __name__ == "__main__":
     create_gitignore()

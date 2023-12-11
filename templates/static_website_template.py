@@ -30,6 +30,8 @@ def create_project_structure(target_directory):
     # Create common files in the target directory
     create_static_website(target_directory)
 
+    print("Project structure created successfully.")
+
 def create_static_website(target_directory):
     # Create common files
     index_html_path = os.path.join(target_directory, 'src', 'index.html')

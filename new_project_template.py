@@ -26,12 +26,19 @@ def parse_arguments():
     return parser.parse_args()
 
 def prompt_for_missing_info(target_directory, project_type):
-    """Prompt for any missing information."""
+    """Prompt for any missing information, allowing retries for project type."""
     if not target_directory:
         target_directory = input("Enter the target directory for your project: ")
-    if not project_type:
+
+    while not project_type or project_type not in ['web_react', 'cli', 'vrm', 'static_website']:
         project_type = input("Enter the project type (web_react, cli, vrm, static_website): ")
+        if project_type in ['web_react', 'cli', 'vrm', 'static_website']:
+            break
+        else:
+            print("Invalid project type. Please choose from 'web_react', 'cli', 'vrm', 'static_website'.")
+
     return target_directory, project_type
+
 
 def main():
     args = parse_arguments()

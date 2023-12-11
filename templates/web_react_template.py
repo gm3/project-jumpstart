@@ -50,6 +50,8 @@ def create_project_structure(target_directory):
     except Exception as e:
         print(f"Error installing libraries: {e}")
 
+    print("Project structure created successfully.")
+
 def create_web_project_files():
     """Create files specific to a web project."""
     create_file('frontend/src/App.js', '// Main frontend application file\n')
