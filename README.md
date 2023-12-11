@@ -17,13 +17,13 @@ To use this tool, follow these steps:
 
 `sudo apt install npm`
 
-1. **Clone or Download the Script**: First, clone this repository or download the script to your local machine.
+**Clone or Download the Script**: First, clone this repository or download the script to your local machine.
 
-2. **Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line. You can use arements like this:
+**Run Script**: Open your terminal or command prompt and navigate to the directory where the script is located. Run `python3 new_project_tempalte.py` from the command line. You can use arements like this:
 
-3. ```
-4. new_project_tempalte.py --help
-5. ```
+```
+new_project_tempalte.py --help
+```
 
 **Here is an example CLI command:**
 
@@ -47,15 +47,15 @@ parser.add_argument(
              'static_website - To create a Static Website project.')
 ```
 
-4. **Select Project Type**: The script will prompt you to select the type of project you want to create. Input the number corresponding to your desired project type, currently we have a few starter templates that need work:
+**Select Project Type**: The script will prompt you to select the type of project you want to create. Input the number corresponding to your desired project type, currently we have a few starter templates that need work:
    - `web_react`: Web/React Project
    - `cli`: CLI Tool
    - `vrm`: VRM Project
    - `static_website`: a Static Website
     
-5. **Follow the Prompts**: IF the script is used without arguments, it will prompt the user for the `target_directory`, and `project_type` After selecting a project type, the script will guide you through any additional steps or information needed to set up the project.
+**Follow the Prompts**: IF the script is used without arguments, it will prompt the user for the `target_directory`, and `project_type` After selecting a project type, the script will guide you through any additional steps or information needed to set up the project.
 
-6. **Project Creation**: The script will create the necessary project structure and files in your current directory.
+**Project Creation**: The script will create the necessary project structure and files in your current directory.
 
 
 ## Extending
