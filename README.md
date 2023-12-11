@@ -28,7 +28,7 @@ To use this tool, follow these steps:
 **Here is an example CLI command:**
 
 ```
-python3 new_project_tempalte.py /path/to/directory -t web_react
+python3 new_project_template.py new_project_name -t web_react
 ```
 
 **How the CLI is defined in new_project_tempalte.py:**
