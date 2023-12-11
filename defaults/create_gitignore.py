@@ -17,6 +17,11 @@ ENV/
 env.bak/
 ENV.bak/
 
+# pycache
+temapltes/__pycache__/
+defaults/__pycache__/
+__pycache__/
+
 # Logs
 logs
 *.log
