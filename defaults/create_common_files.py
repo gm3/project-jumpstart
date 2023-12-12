@@ -9,10 +9,9 @@ def create_file(path, content=''):
 def create_common_files():
     """Create common files for the project."""
     create_file('README.md', '# Project Title\n\nDescription of the project.\n')
-    create_file('LICENSE', 'MIT License\n\n[Your License Details Here]\n')
+    create_file('LICENSE', '[Your License Details Here]\n')
     create_file('.env.example', '# Environment variables template\n')
     create_file('CONTRIBUTING.md', '# Contributing Guidelines\n')
-    create_file('CODE_OF_CONDUCT.md', '# Code of Conduct\n')
     create_file('.github/ISSUE_TEMPLATE/bug_report.md', '# Bug Report Template\n')
     create_file('.github/ISSUE_TEMPLATE/feature_request.md', '# Feature Request Template\n')
 
